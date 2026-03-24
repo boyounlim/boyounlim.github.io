@@ -1,0 +1,16 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#F3FAF5"/>
+  <circle cx="1030" cy="110" r="240" fill="#D9F0E1"/>
+  <circle cx="130" cy="560" r="260" fill="#E5F5EB"/>
+  <rect x="95" y="100" width="1010" height="430" rx="36" fill="#FFFFFF" stroke="#D5E4D9" stroke-width="4"/>
+  <text x="150" y="250" fill="#0E2A20" font-family="Noto Sans KR, sans-serif" font-size="56" font-weight="700">
+    홍길동 | 개발자 포트폴리오
+  </text>
+  <text x="150" y="330" fill="#2F5B48" font-family="Space Grotesk, Noto Sans KR, sans-serif" font-size="34" font-weight="500">
+    Backend-focused Developer Portfolio
+  </text>
+  <rect x="150" y="385" width="240" height="56" rx="28" fill="#0F7A57"/>
+  <text x="188" y="422" fill="#FFFFFF" font-family="Space Grotesk, sans-serif" font-size="24" font-weight="700">
+    Projects | Contact
+  </text>
+</svg>
