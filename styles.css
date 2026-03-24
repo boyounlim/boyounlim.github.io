@@ -193,6 +193,28 @@ h3 {
   color: var(--text-subtle);
 }
 
+.intro-meta {
+  list-style: none;
+  padding: 0;
+  margin: 1.1rem 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.intro-meta li {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.92rem;
+  color: var(--text-subtle);
+  background: color-mix(in srgb, var(--surface-alt) 55%, white);
+}
+
+.intro-meta a {
+  text-decoration: none;
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
@@ -236,10 +258,16 @@ h3 {
   margin-bottom: 1.3rem;
 }
 
+.highlight-list {
+  margin: 1.1rem 0 0;
+  padding-left: 1.1rem;
+  color: var(--text-subtle);
+}
+
 .skill-groups {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 }
 
 .skill-card,
@@ -259,10 +287,51 @@ h3 {
   color: var(--text-subtle);
 }
 
+.skill-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.skill-list li {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.28rem 0.7rem;
+  font-size: 0.86rem;
+  color: var(--text-subtle);
+  background: color-mix(in srgb, var(--surface-alt) 65%, white);
+}
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
+}
+
+.project-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.55rem;
+}
+
+.badge {
+  white-space: nowrap;
+  background: color-mix(in srgb, var(--accent) 86%, white);
+  color: #fff;
+  border-radius: 999px;
+  padding: 0.15rem 0.6rem;
+  font-size: 0.74rem;
+  font-weight: 700;
+}
+
+.project-period {
+  margin: -0.2rem 0 0.8rem;
+  font-size: 0.9rem;
+  color: var(--text-subtle);
 }
 
 .project-summary {
@@ -284,8 +353,16 @@ h3 {
   color: var(--text-subtle);
 }
 
+.project-highlights {
+  margin: 0.55rem 0 0;
+  padding-left: 1.1rem;
+  color: var(--text-subtle);
+}
+
 .project-links {
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 0.6rem;
   margin-top: 1.1rem;
 }
@@ -299,6 +376,18 @@ h3 {
 
 .project-links a:hover {
   text-decoration: underline;
+}
+
+.project-links .muted {
+  color: var(--text-subtle);
+  font-size: 0.92rem;
+}
+
+.section-subgrid {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
 }
 
 .contact-list {
@@ -359,6 +448,10 @@ h3 {
 
   .project-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .section-subgrid {
+    grid-template-columns: 1fr;
   }
 }
 

@@ -3,20 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>홍길동 | 개발자 포트폴리오</title>
+    <title>홍길동 | Developer Portfolio</title>
     <meta
       name="description"
-      content="백엔드 중심 개발자 홍길동의 포트폴리오입니다. 소개, 기술 스택, 프로젝트, 경력 요약, 연락처를 확인할 수 있습니다."
+      content="문제를 해결하고 결과를 만드는 개발자 포트폴리오"
     />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="홍길동 | 개발자 포트폴리오" />
+    <meta property="og:title" content="홍길동 | Developer Portfolio" />
     <meta
       property="og:description"
-      content="한국어 중심 원페이지 개발자 포트폴리오. Projects, Experience, Contact 정보를 빠르게 확인하세요."
+      content="문제를 해결하고 결과를 만드는 개발자 포트폴리오"
     />
+    <meta property="og:url" content="https://your-github-id.github.io" />
     <meta property="og:image" content="assets/og-cover.svg" />
     <meta property="og:locale" content="ko_KR" />
-    <meta name="theme-color" content="#f8faf6" />
+    <meta name="theme-color" content="#0f766e" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -32,7 +33,7 @@
       <div class="container header-inner">
         <a class="brand" href="#top" aria-label="홈으로 이동">
           <span class="brand-mark" aria-hidden="true"></span>
-          <span>Hong Gildong</span>
+          <span>홍길동</span>
         </a>
         <button
           class="nav-toggle"
@@ -59,31 +60,30 @@
       <section id="top" class="hero section reveal">
         <div class="container hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow" lang="en">Developer Portfolio</p>
-            <h1>
-              사용자와 팀의 문제를
-              <br />
-              안정적인 제품으로 바꾸는 개발자
-            </h1>
+            <p class="eyebrow" lang="en">Backend Developer</p>
+            <h1>데이터를 서비스 가치로 바꾸는 개발자</h1>
             <p class="hero-description">
-              안녕하세요, 백엔드 중심으로 서비스 개발을 하는 홍길동입니다.
-              구조적인 설계와 꾸준한 개선으로 제품이 오래 성장할 수 있는 기반을
-              만듭니다.
+              문제를 해결하고 결과를 만드는 개발자 포트폴리오입니다. 유지보수 가능한
+              구조, 명확한 문서화, 협업 친화적인 개발 문화를 지향합니다.
             </p>
+            <ul class="intro-meta" aria-label="기본 정보">
+              <li>Seoul, KR</li>
+              <li>
+                <a href="mailto:you@example.com">you@example.com</a>
+              </li>
+            </ul>
             <div class="hero-actions">
               <a class="btn btn-primary" href="#projects">프로젝트 보기</a>
-              <a
-                class="btn btn-secondary"
-                href="#"
-                aria-label="이력서 PDF 준비 중"
-                >이력서 PDF (준비 중)</a
+              <a class="btn btn-secondary" href="./assets/resume.pdf"
+                >이력서 보기</a
               >
             </div>
           </div>
           <figure class="hero-visual">
             <img
-              src="assets/profile-placeholder.svg"
-              alt="개발자 프로필을 상징하는 일러스트"
+              src="./assets/profile.jpg"
+              onerror="this.onerror=null;this.src='assets/profile-placeholder.svg';"
+              alt="홍길동 프로필 이미지"
               width="420"
               height="420"
             />
@@ -98,10 +98,15 @@
             <h2>소개</h2>
           </div>
           <p class="about-text">
-            문제를 빠르게 해결하는 것에 그치지 않고, 유지보수성과 협업 효율까지
-            고려한 구현을 지향합니다. 요구사항을 명확히 정리하고, 작은 단위로
-            검증 가능한 결과를 만들어 팀의 개발 속도를 높입니다.
+            서비스의 핵심 문제를 데이터와 자동화로 해결하는 것을 좋아합니다.
+            유지보수 가능한 구조, 명확한 문서화, 협업 친화적인 개발 문화를 중요하게
+            생각합니다.
           </p>
+          <ul class="highlight-list">
+            <li>요구사항 분석부터 배포까지 end-to-end 경험</li>
+            <li>자동화 스크립트와 리포트 파이프라인 구축 경험</li>
+            <li>코드 리뷰 기반의 안정적인 협업 경험</li>
+          </ul>
         </div>
       </section>
 
@@ -113,27 +118,48 @@
           </div>
           <div class="skill-groups">
             <article class="skill-card">
+              <h3>Languages</h3>
+              <ul class="skill-list">
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>Python</li>
+                <li>SQL</li>
+              </ul>
+            </article>
+            <article class="skill-card">
+              <h3>Frontend</h3>
+              <ul class="skill-list">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>React</li>
+                <li>Next.js</li>
+              </ul>
+            </article>
+            <article class="skill-card">
               <h3>Backend</h3>
-              <ul>
-                <li>Java / Spring Boot</li>
-                <li>Node.js / Express</li>
-                <li>REST API 설계</li>
+              <ul class="skill-list">
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>FastAPI</li>
+                <li>REST API</li>
               </ul>
             </article>
             <article class="skill-card">
-              <h3>Data & Infra</h3>
-              <ul>
-                <li>MySQL / PostgreSQL</li>
-                <li>Redis / Docker</li>
-                <li>AWS (EC2, S3, RDS)</li>
+              <h3>Data</h3>
+              <ul class="skill-list">
+                <li>Pandas</li>
+                <li>ExcelJS</li>
+                <li>MySQL</li>
+                <li>PostgreSQL</li>
               </ul>
             </article>
             <article class="skill-card">
-              <h3>Collaboration</h3>
-              <ul>
-                <li>GitHub Flow</li>
-                <li>Notion / Jira</li>
-                <li>테스트 기반 리뷰 문화</li>
+              <h3>DevOps</h3>
+              <ul class="skill-list">
+                <li>GitHub Actions</li>
+                <li>Docker</li>
+                <li>Vercel</li>
+                <li>AWS EC2</li>
               </ul>
             </article>
           </div>
@@ -148,61 +174,98 @@
           </div>
           <div class="project-grid">
             <article class="project-card">
-              <h3>프로젝트명: Team Task Board</h3>
+              <div class="project-header">
+                <h3>Auto Sales Report Generator</h3>
+                <span class="badge">대표 프로젝트</span>
+              </div>
+              <p class="project-period">2026.03 - 2026.03</p>
               <p class="project-summary">
-                한줄요약: 팀 일정과 업무 상태를 시각화한 협업 보드 서비스
+                엑셀 매출 데이터를 자동으로 정리하고 보고서 파일을 생성하는 리포팅
+                자동화 프로젝트
               </p>
               <dl>
-                <dt>역할/기여</dt>
-                <dd>백엔드 API 설계 및 인증/권한 로직 구현</dd>
                 <dt>기술스택</dt>
-                <dd>Spring Boot, JPA, MySQL, Redis, Docker</dd>
-                <dt>성과</dt>
-                <dd>
-                  캐시 전략 적용으로 대시보드 응답시간 평균 42% 단축
-                </dd>
+                <dd>Python, Pandas, openpyxl, ExcelJS</dd>
+                <dt>주요 성과</dt>
               </dl>
+              <ul class="project-highlights">
+                <li>반복 수작업 보고서 프로세스를 자동화해 작업 시간 단축</li>
+                <li>일자별/항목별 매출 지표 계산 로직 구현</li>
+                <li>보고서 템플릿 기반의 재사용 가능한 출력 구조 설계</li>
+              </ul>
               <div class="project-links">
-                <a href="#" target="_blank" rel="noreferrer">Demo</a>
-                <a href="#" target="_blank" rel="noreferrer">GitHub</a>
+                <a
+                  href="https://github.com/your-github-id/auto-sales-report"
+                  target="_blank"
+                  rel="noreferrer"
+                  >GitHub</a
+                >
+                <span class="muted">Demo 준비 중</span>
               </div>
             </article>
 
             <article class="project-card">
-              <h3>프로젝트명: Meal Pick</h3>
+              <div class="project-header">
+                <h3>Sales Template Builder</h3>
+                <span class="badge">대표 프로젝트</span>
+              </div>
+              <p class="project-period">2026.03 - 2026.03</p>
               <p class="project-summary">
-                한줄요약: 위치 기반 점심 추천과 리뷰를 제공하는 웹앱
+                리포트 시각화 템플릿을 생성해 데이터 전달력을 높인 도구성 프로젝트
               </p>
               <dl>
-                <dt>역할/기여</dt>
-                <dd>추천 API 개발 및 리뷰 데이터 모델링</dd>
                 <dt>기술스택</dt>
-                <dd>Node.js, Express, PostgreSQL, AWS S3</dd>
-                <dt>성과</dt>
-                <dd>쿼리 튜닝으로 피크 시간대 DB 부하 30% 감소</dd>
+                <dd>Node.js, ExcelJS, xlsx-chart</dd>
+                <dt>주요 성과</dt>
               </dl>
+              <ul class="project-highlights">
+                <li>매출 리포트 템플릿 자동 생성 스크립트 구현</li>
+                <li>차트 기반 시각화를 통해 비개발자 이해도 향상</li>
+                <li>일관된 형식의 산출물로 운영 효율화</li>
+              </ul>
               <div class="project-links">
-                <a href="#" target="_blank" rel="noreferrer">Demo</a>
-                <a href="#" target="_blank" rel="noreferrer">GitHub</a>
+                <a
+                  href="https://github.com/your-github-id/sales-template-builder"
+                  target="_blank"
+                  rel="noreferrer"
+                  >GitHub</a
+                >
+                <span class="muted">Demo 준비 중</span>
               </div>
             </article>
 
             <article class="project-card">
-              <h3>프로젝트명: Study Log</h3>
+              <div class="project-header">
+                <h3>Codex Intro Landing</h3>
+              </div>
+              <p class="project-period">2026.03 - 2026.03</p>
               <p class="project-summary">
-                한줄요약: 학습 목표와 회고를 기록하는 개인 생산성 플랫폼
+                간단한 소개형 랜딩 페이지를 통해 핵심 메시지를 시각적으로 전달하는
+                정적 웹 페이지
               </p>
               <dl>
-                <dt>역할/기여</dt>
-                <dd>풀스택 개발 및 CI 파이프라인 구성</dd>
                 <dt>기술스택</dt>
-                <dd>React, TypeScript, Firebase, GitHub Actions</dd>
-                <dt>성과</dt>
-                <dd>자동 배포 구성으로 릴리즈 리드타임 주 1회→일 1회</dd>
+                <dd>HTML, CSS</dd>
+                <dt>주요 성과</dt>
               </dl>
+              <ul class="project-highlights">
+                <li>반응형 레이아웃 구성</li>
+                <li>가독성 중심 타이포그래피/컬러 설계</li>
+                <li>정적 배포 환경(GitHub Pages) 고려 구조 적용</li>
+              </ul>
               <div class="project-links">
-                <a href="#" target="_blank" rel="noreferrer">Demo</a>
-                <a href="#" target="_blank" rel="noreferrer">GitHub</a>
+                <a
+                  href="https://github.com/your-github-id/codex-intro-landing"
+                  target="_blank"
+                  rel="noreferrer"
+                  >GitHub</a
+                >
+                <a
+                  href="https://your-github-id.github.io/codex-intro-landing"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Live Demo</a
+                >
               </div>
             </article>
           </div>
@@ -215,15 +278,36 @@
             <p class="eyebrow" lang="en">Experience</p>
             <h2>경력 요약</h2>
           </div>
-          <div class="experience-card">
+          <article class="experience-card">
             <p>
-              <strong>ABC Tech</strong> · 백엔드 개발자 · 2023.03 - 현재
+              <strong>Your Company</strong> · Backend Developer · 2025.01 -
+              Present
+            </p>
+            <p class="project-summary">
+              내부 운영 도구 및 API 서비스를 개발하고 데이터 기반 자동화를
+              구축했습니다.
             </p>
             <ul>
-              <li>결제/주문 도메인 API 운영 및 장애 대응 프로세스 고도화</li>
-              <li>로그 모니터링 기반 이슈 탐지 자동화로 장애 인지 시간 단축</li>
-              <li>코드리뷰 가이드 문서화로 신규 팀원 온보딩 기간 감소</li>
+              <li>배치 자동화 파이프라인 구축으로 수작업 시간 감소</li>
+              <li>API 응답 성능 개선 및 장애 대응 프로세스 정비</li>
+              <li>개발 문서/코딩 컨벤션 체계화</li>
             </ul>
+          </article>
+
+          <div class="section-subgrid">
+            <article class="skill-card">
+              <h3>학력</h3>
+              <p><strong>OO대학교</strong> · 컴퓨터공학과</p>
+              <p class="project-summary">2020.03 - 2024.02</p>
+              <p class="project-summary">
+                자료구조, 알고리즘, 데이터베이스 중심 학습
+              </p>
+            </article>
+            <article class="skill-card">
+              <h3>자격증</h3>
+              <p><strong>정보처리기사</strong></p>
+              <p class="project-summary">한국산업인력공단 · 2024-06</p>
+            </article>
           </div>
         </div>
       </section>
@@ -239,7 +323,7 @@
           </p>
           <ul class="contact-list">
             <li>
-              <a href="mailto:youremail@example.com">Email</a>
+              <a href="mailto:you@example.com">Email</a>
             </li>
             <li>
               <a href="https://github.com/your-github-id" target="_blank" rel="noreferrer"
@@ -247,10 +331,12 @@
               >
             </li>
             <li>
-              <a
-                href="https://www.linkedin.com/in/your-linkedin-id/"
-                target="_blank"
-                rel="noreferrer"
+              <a href="https://your-blog-url.com" target="_blank" rel="noreferrer"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/your-id" target="_blank" rel="noreferrer"
                 >LinkedIn</a
               >
             </li>
@@ -261,7 +347,7 @@
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <p>© <span id="year"></span> Hong Gildong. All rights reserved.</p>
+        <p>© <span id="year"></span> 홍길동. Last updated: 2026-03-24</p>
       </div>
     </footer>
 
